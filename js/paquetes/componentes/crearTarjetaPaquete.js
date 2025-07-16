@@ -30,7 +30,7 @@ export function crearTarjetaPaquete(paquete) {
     </div>
     <div class="info-inferior">
       ${fechaHtml}
-      <a href="/paginas/reserva.html?destino_id=${paquete.destino_id}&paquete_id=${paquete.paquete_id}" class="boton-comprar">RESERVAR</a>
+      <a href="./reserva.html?destino_id=${paquete.destino_id}&paquete_id=${paquete.paquete_id}" class="boton-comprar">RESERVAR</a>
     </div>
   `;
 

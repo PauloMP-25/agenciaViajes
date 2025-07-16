@@ -51,7 +51,7 @@ export function renderDestinos(destinos, contenedor, filtroZona = "todos") {
       const zonasValidas = ["costa", "sierra", "selva"];
       const zona = destino.zona ? destino.zona.toLowerCase() : "costa";
       const iconoZona = zonasValidas.includes(zona) ? zona : "costa";
-      const icono = `activos/img/zonas/icono-${iconoZona}.svg`;
+      const icono = `img/zonas/icono-${iconoZona}.svg`;
 
       // ✅ Formatear horarios en formato amigable
       const horarios = destino.horarios?.length > 0
@@ -69,7 +69,7 @@ export function renderDestinos(destinos, contenedor, filtroZona = "todos") {
         <p>${destino.descripcion}</p>
         <p class="horario-salida"><strong>Horarios:</strong> ${horarios}</p>
         <div class="precio">PRECIO <span>S/${destino.precio}</span></div>
-        <a href="/paginas/reserva.html?destino_id=${destino.destino_id}" class="boton-comprar">
+        <a href="./reserva.html?destino_id=${destino.destino_id}" class="boton-comprar">
           COMPRAR
         </a>
       `;
