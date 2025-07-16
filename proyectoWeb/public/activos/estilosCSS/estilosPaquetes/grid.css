@@ -1,0 +1,43 @@
+/* ==========================================================
+   grid.css
+   ➤ Estilos de grillas para contener tarjetas de paquetes.
+   ➤ Controla el número de columnas, el espaciado y el
+     comportamiento visual de TODAS las secciones por igual.
+============================================================== */
+
+.contenedor-paquetes {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================
+   ➤ Grilla base general (aplica para todas las categorías)
+========================================================== */
+.grid-paquetes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;               
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-items: center;                
+  align-items: stretch;                 
+  align-content: start;
+  width: 100%;
+}
+/* ==========================================================
+   ➤ Uniformidad entre TODAS las secciones (mismo ancho)
+========================================================== */
+.seccion-paquete,
+.paquetes-promocionales {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

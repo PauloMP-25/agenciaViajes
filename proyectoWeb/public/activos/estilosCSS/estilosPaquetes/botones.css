@@ -1,0 +1,84 @@
+/* ============================================================
+   botones.css
+   ➤ Define estilos base y personalizados para los botones de compra
+   ➤ Diferenciación visual por categoría:
+     - económico, vip, ejecutivo y doble (promocional)
+   ➤ Hover con animaciones suaves para mejor UX
+=============================================================== */
+
+
+/* ===============================
+   🎯 Estilo base del botón de compra
+=============================== */
+.boton-comprar {
+  display: inline-block;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 8px;
+  transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-comprar:hover {
+  transform: translateY(-3px); /* Elevación suave */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+}
+
+
+/* ===============================
+   🟠 ECONÓMICO
+=============================== */
+.economico .boton-comprar {
+  background-color: #cf4f00;
+  color: white;
+}
+
+.economico .boton-comprar:hover {
+  background-color: #ff6600;
+  color: black;
+}
+
+
+/* ===============================
+   🟡 VIP
+=============================== */
+.vip .boton-comprar {
+  background-color: #222;
+  color: #FFD700;
+}
+
+.vip .boton-comprar:hover {
+  background-color: #FFD700;
+  color: #222;
+}
+
+
+/* ===============================
+   🔵 EJECUTIVO
+=============================== */
+.ejecutivo .boton-comprar {
+  background-color: #005f8a;
+  color: white;
+}
+
+.ejecutivo .boton-comprar:hover {
+  background-color: #99ccea;
+  color: black;
+}
+
+
+/* ===============================
+   🔴 DOBLE - Promoción Fiestas Patrias
+=============================== */
+.doble .boton-comprar {
+  background-color: #c40000;     /* Rojo fuerte (bandera) */
+  color: #ffffff;
+  border: 2px solid #c40000;
+}
+
+.doble .boton-comprar:hover {
+  background-color: #ffffff;
+  color: #c40000;
+  border: 2px solid #c40000;
+}

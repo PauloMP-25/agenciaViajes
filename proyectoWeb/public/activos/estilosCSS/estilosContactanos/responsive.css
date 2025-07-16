@@ -1,0 +1,72 @@
+/* ===============================
+   MEDIA QUERY <= 760px
+=============================== */
+@media (max-width: 760px) {
+  .titulo-seccion {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .formulario-contacto {
+    padding: 20px;
+  }
+
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .formulario-contacto button {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+    #map {
+    height: 300px;
+  }
+
+  .mapa-container {
+    padding: 20px;
+  }
+
+  .mapa-titulo {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===============================
+   MEDIA QUERY <= 480px
+=============================== */
+@media (max-width: 480px) {
+  .titulo-seccion {
+    font-size: 1.6rem;
+  }
+
+  .formulario-contacto {
+    padding: 15px;
+  }
+
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .formulario-contacto button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+    #map {
+    height: 250px;
+  }
+
+  .mapa-container {
+    padding: 15px;
+  }
+
+  .mapa-titulo {
+    font-size: 1.3rem;
+  }
+}

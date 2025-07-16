@@ -1,0 +1,89 @@
+/* servicios.css */
+/* Mostrar servicios como “Encomiendas” o “Traslados”. */
+
+.servicios-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.titulo-servicios {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: rgb(151, 10, 10);
+  font-weight: bold;
+  position: relative;
+}
+
+.titulo-servicios::after {
+  content: "";
+  display: block;
+  width: 101%;
+  max-width: 1840px;
+  height: 2px;
+  background-color: rgb(151, 10, 10);
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+.recuadro {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagen-servicio img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Contenido oculto inicialmente */
+.contenido-servicio {
+  padding: 0 15px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.contenido-servicio h3,
+.contenido-servicio p {
+  margin: 10px 0;
+}
+
+.contenido-servicio h3 {
+  text-align: center;
+}
+
+  .contenido-servicio p {
+    text-align: justify;
+  }
+/* Hover solo sobre la imagen */
+.imagen-servicio:hover + .contenido-servicio {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* Efecto visual en la imagen al pasar el cursor */
+.imagen-servicio:hover img {
+  transform: scale(1.03);
+  filter: brightness(60%);
+}
+

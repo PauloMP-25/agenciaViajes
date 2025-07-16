@@ -1,0 +1,20 @@
+/* transiciones.css */
+/* ================================================
+   Transiciones suaves para mostrar u ocultar secciones.
+   Aplican a contenedores como .grid-paquetes, tarjetas
+   o bloques de UI que se muestren dinámicamente.
+==================================================== */
+
+.oculta {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px); /* Ligero deslizamiento hacia abajo */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.4s ease;
+}

@@ -1,0 +1,123 @@
+/* ===============================
+   ENCABEZADOS DE CADA COLUMNA
+================================= */
+.titulo-seccion {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* ===============================
+   COLUMNA IZQUIERDA (asientos)
+================================= */
+.seccion-izquierda {
+  flex: 1 1 50%;
+  min-width: 300px;
+  background-color: #f1f8e9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+/* ===============================
+   COLUMNA DERECHA (resumen)
+================================= */
+.seccion-derecha {
+  flex: 1 1 35%;
+  min-width: 260px;
+  background-color: #fffde7;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Ajusta el espacio entre elementos del resumen */
+.info-asientos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Antes probablemente estaba en 1rem o más */
+  align-items: flex-start;
+}
+
+/* ===============================
+   IMAGEN QR
+================================= */
+.imagen-qr {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.imagen-qr img {
+  width: 100%;
+  max-width: 180px; /* más ancho */
+  height: auto;
+  border-radius: 10px;
+}
+
+#tipoPago {
+  margin-bottom: 0.5rem;
+}
+
+/* ===============================
+   BOTONES EN MODAL
+================================= */
+.acciones-modal {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.boton-cancelar,
+.boton-confirmar {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-cancelar {
+  background-color: #e53935;
+  color: white;
+}
+.boton-cancelar:hover {
+  background-color: #c62828;
+}
+
+.boton-confirmar {
+  background-color: #388e3c;
+  color: white;
+}
+.boton-confirmar:hover {
+  background-color: #2e7d32;
+}
+
+/* ===============================
+   BOTÓN CERRAR MODAL (X)
+================================= */
+.cerrar-modal {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.cerrar-modal:hover {
+  color: #d32f2f;
+}

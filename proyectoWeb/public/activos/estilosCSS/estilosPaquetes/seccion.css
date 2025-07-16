@@ -1,0 +1,30 @@
+/* seccion.css */
+/* Sección principal de paquetes: padding y layout */
+.seccion-paquete {
+  color: #fff;
+  margin: 0 auto 40px;
+  padding: 40px 20px 60px;
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Cuando hay 2 cards */
+.seccion-paquete.ancho-medio {
+  max-width: 720px;
+}
+
+.grid-paquetes.solo-dos-paquetes {
+  justify-content: center;
+}
+
+/* Bordes decorativos para toda la sección */
+.seccion-paquete.doble {
+  background: linear-gradient(to bottom, #fff0f0 0%, #ffeaea 100%);
+  padding: 3rem 1rem;
+  border-top: 5px double #c40000;
+  border-bottom: 5px double #c40000;
+  box-shadow: inset 0 8px 12px rgba(200, 0, 0, 0.08);
+}

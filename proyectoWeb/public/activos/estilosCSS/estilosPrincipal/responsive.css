@@ -1,0 +1,30 @@
+/* responsive.css */
+/* Estilos adaptativos para móvil y tablet */
+
+@media (max-width: 768px) {
+  .carrusel-container {
+    height: 300px;
+  }
+
+  .overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+
+  .carrusel-btn {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+  }
+
+  .tabla-info table {
+    font-size: 0.9rem;
+  }
+
+  .tabla-info th,
+  .tabla-info td {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,139 @@
+/* tarjetas.css */
+/* Estilo visual de las tarjetas de destinos generadas dinámicamente por JS. */
+
+.destinos-section {
+  background-color: rgb(242, 222, 195);
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.titulo-destinos {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: rgb(151, 10, 10);
+  font-weight: bold;
+  position: relative;
+}
+
+.titulo-destinos::after {
+  content: "";
+  display: block;
+  width: 101%;
+  max-width: 1840px;
+  height: 2px;
+  background-color: rgb(151, 10, 10);
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.destinos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destinos-grid .card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card.oculta {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px 15px 25px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+  color: #444;
+  animation: destello 2.5s ease-in-out infinite;
+}
+
+.card h3 img {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  object-fit: contain;
+}
+
+.card p {
+  color: #444;
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px; /* bordes redondeados */
+  display: block;
+}
+
+.precio {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(151, 10, 10);
+  color: #fff;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+}
+
+.precio span {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 3px;
+}
+
+.boton-comprar {
+  margin-top: 15px;
+  display: inline-block;
+  background-color: rgb(151, 10, 10);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+  background-color: #d63031;
+}
+
+.horario-salida {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #004d40; /* tono oscuro y sobrio */
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}

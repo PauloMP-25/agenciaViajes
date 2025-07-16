@@ -1,0 +1,22 @@
+/* botonContacto.css */
+/* Estilos para el botón de contacto */
+
+.boton-contacto {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.boton-contacto .boton {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #0D8ABF;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.boton-contacto .boton:hover {
+  background-color: #066fa0;
+}

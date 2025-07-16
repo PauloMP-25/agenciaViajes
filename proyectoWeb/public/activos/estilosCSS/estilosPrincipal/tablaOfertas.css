@@ -1,0 +1,140 @@
+/* tablaOfertas.css */
+/* Estilos para la tabla de promociones por fiestas patrias */
+
+/* =======================================
+   ESTILOS PATRIÓTICOS - TABLA DE OFERTAS
+   Sección: Escápate en Fiestas Patrias
+======================================= */
+
+.tabla-info {
+  background-color: #ffffff;
+  border: 3px solid #b71c1c; /* Rojo bandera peruano */
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin: 40px auto;
+  width: 95%;
+  max-width: 1100px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-info h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #b71c1c; /* Rojo fuerte */
+  margin-bottom: 10px;
+}
+
+.descripcion-ofertas {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+#tablaOfertas {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#tablaOfertas caption {
+  font-size: 0;
+  visibility: hidden; /* Accesible pero no visible */
+}
+
+#tablaOfertas thead {
+  background-color: #b71c1c; /* Rojo bandera */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#tablaOfertas thead th {
+  padding: 12px 15px;
+  border: 1px solid #b71c1c;
+}
+
+#tablaOfertas tbody tr:nth-child(even) {
+  background-color: #fff0f0; /* Rojo muy claro */
+}
+
+#tablaOfertas tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+#tablaOfertas td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+#tablaOfertas tbody tr:hover {
+  background-color: #fff8e1; /* Detalle dorado suave */
+  transition: background-color 0.3s ease;
+}
+
+/* Botón */
+.boton-contacto {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.boton-contacto .boton {
+  background-color: #b71c1c;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton-contacto .boton:hover {
+  background-color: #880e0e;
+}
+
+.bandera-icon {
+  width: 32px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.sello-promocion {
+  background-color: #ffcc00;
+  color: #b71c1c;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-left: 6px;
+  display: inline-block;
+  animation: destello 1.5s infinite alternate;
+}
+
+@keyframes destello {
+  0% { background-color: #ffcc00; }
+  100% { background-color: #fff176; }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .tabla-info {
+    padding: 20px 10px;
+  }
+
+  #tablaOfertas th, #tablaOfertas td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .boton-contacto .boton {
+    width: 100%;
+    display: block;
+  }
+}

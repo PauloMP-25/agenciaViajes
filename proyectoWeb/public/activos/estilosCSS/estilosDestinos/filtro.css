@@ -1,0 +1,64 @@
+/* filtro.css */
+/* Personaliza el selector de zonas (Costa, Sierra, Selva). */
+
+.filtro-region {
+  max-width: 1200px;
+  margin: 30px auto 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.filtro-region select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+.select-wrapper select {
+  appearance: none;
+  width: 100%;
+  padding: 8px 40px 8px 12px;
+  font-size: 1rem;
+  border: 2px solid #0077be;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 119, 190, 0.2);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.select-wrapper select:hover,
+.select-wrapper select:focus {
+  border-color: #005f99;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 119, 190, 0.5);
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.9rem;
+  color: #0077be;
+}
+
+.filtro-region label {
+  font-size: 1rem;
+  font-weight: bold;
+}

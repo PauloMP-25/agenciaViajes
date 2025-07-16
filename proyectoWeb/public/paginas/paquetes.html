@@ -1,0 +1,98 @@
+<!-- paginas/paquetes.html -->
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENCIA LAS ROSAS - PAQUETES</title>
+
+    <!-- Estilos base modulares -->
+    <link rel="stylesheet" href="/activos/estilosCSS/main.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosPaquetes/botones.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosPaquetes/categorias.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosPaquetes/filtro.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosPaquetes/grid.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosPaquetes/responsive.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosPaquetes/seccion.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosPaquetes/tarjetas.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosPaquetes/transiciones.css" />
+  </head>
+  <body>
+
+    <!-- Header dinámico según rol -->
+    <div id="navbar"></div>
+    <!-- FILTROS -->
+    <div class="filtro-region">
+      <label for="selector-region">🌎 Región:</label>
+      <select id="selector-region">
+        <option value="TODOS">Todos</option>
+        <option value="COSTA">Costa</option>
+        <option value="SIERRA">Sierra</option>
+        <option value="SELVA">Selva</option>
+      </select>
+    </div>
+
+    <!-- PAQUETES PROMOCIONALES -->
+    <section class="seccion-paquete doble">
+      <h2 class="titulo-seccion">🎉 Doble Aventura Patriótica</h2>
+      <p class="descripcion">
+        ¡Celebra Fiestas Patrias viajando con quien tú quieras! Paquetes dobles al precio de uno, solo hasta el 31 de julio.
+      </p>
+       <ul class="caracteristicas">
+        <li>🎉 Promoción válida por Fiestas Patrias</li>
+        <li>👥 Pasaje doble por el precio de uno</li>
+        <li>🧳 Ideal para parejas, amigos o familias</li>
+      </ul>
+      <div class="grid-paquetes" data-categoria="doble">
+        <!-- Las tarjetas dobles se insertarán aquí -->
+      </div>
+    </section>
+
+    <!-- VIAJES ECONÓMICOS -->
+    <section class="seccion-paquete economico">
+      <h2 class="titulo-seccion">VIAJES ECONÓMICOS</h2>
+      <p class="descripcion">Opciones accesibles sin sacrificar comodidad ni calidad, pensadas para el viajero inteligente.</p>
+      <ul class="caracteristicas">
+        <li>✅ Precios al alcance de todos</li>
+        <li>✅ Transporte seguro y cómodo</li>
+        <li>✅ Acompañamiento básico en ruta</li>
+      </ul>
+
+      <div class="grid-paquetes" data-categoria="economico"></div>
+    </section>
+  
+    <!-- VIAJES VIP -->
+    <section class="seccion-paquete vip">
+      <h2 class="titulo-seccion">VIAJES VIP</h2>
+      <p class="descripcion">Exclusividad, confort y atención personalizada en cada detalle de tu viaje.</p>
+      <ul class="caracteristicas">
+        <li>✨ Asientos premium y refrigerios gourmet</li>
+        <li>✨ Hoteles 4 estrellas</li>
+        <li>✨ Guía privado durante el recorrido</li>
+      </ul>
+  
+      <div class="grid-paquetes" data-categoria="vip"></div>
+    </section>
+  
+    <!-- VIAJES EJECUTIVOS -->
+    <section class="seccion-paquete ejecutivo">
+      <h2 class="titulo-seccion">VIAJES EJECUTIVOS</h2>
+      <p class="descripcion">Diseñados para profesionales que viajan por negocios con eficiencia y comodidad.</p>
+      <ul class="caracteristicas">
+        <li>🔄 Itinerarios flexibles</li>
+        <li>🛋 Espacios con conectividad garantizada</li>
+        <li>✅ Servicio puerta a puerta</li>
+      </ul>
+      <div class="grid-paquetes" data-categoria="ejecutivo"></div>
+    </section>
+  
+    <!-- Footer dinámico -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="../activos/js/global/navbar.js"></script>
+    <script src="../activos/js/paquetes/paquetesMain.js" type="module"></script>
+
+  </body>
+  </html>
+  

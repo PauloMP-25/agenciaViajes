@@ -1,0 +1,92 @@
+/* responsive.css */
+/* Asegurar buen comportamiento visual en pantallas pequeñas. */
+
+@media (max-width: 768px) {
+
+  /* RESPONSIVIDAD PARA LAS CARTAS */
+  .titulo-destinos,
+  .titulo-servicios {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p,
+  .recuadro p {
+    font-size: 0.9rem;
+  }
+
+  .boton-comprar {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  /* RESPONSIVIDAD PARA LOS SERVICIOS */
+
+  /* Recuadros uno debajo del otro */
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recuadro {
+    padding: 15px;
+    max-height: none;
+    overflow: visible;
+  }
+
+  /* Ajustes para la imagen */
+  .imagen-servicio img {
+    height: auto;
+    filter: none !important;
+    transform: none !important;
+  }
+
+  /* Mostrar siempre el contenido textual */
+  .contenido-servicio {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible;
+    padding: 10px 15px;
+  }
+
+  .contenido-servicio h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .contenido-servicio p {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  /* RESPONSIVIDAD PARA EL COLLAGE */
+
+  .collage {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: auto;
+  }
+
+  .collage-texto-central {
+    font-size: 16px;
+    padding: 10px 15px;
+    max-width: 90%; /* Asegura que no se desborde */
+    white-space: normal; /* Permite salto de línea */
+  }
+
+  /* RESPONSIVIDAD PARA EL FILTRO */
+
+  .filtro-region {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    gap: 8px;
+  }
+
+  .select-wrapper {
+    width: 100%;
+  }
+}

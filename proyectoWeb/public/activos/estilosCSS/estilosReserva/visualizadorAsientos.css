@@ -1,0 +1,76 @@
+/* ===============================
+   VISUALIZACIÓN DE ASIENTOS
+================================ */
+#contenedorAsientos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Fila final fuera del grid, centrada */
+.fila-final-asientos {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.bus-asientos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 4 asientos + 1 pasillo */
+  gap: 12px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.asiento {
+  width: 45px;
+  height: 45px;
+  background-color: #e0f7fa;
+  border: 2px solid #00838f;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 42px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.asiento.seleccionado {
+  background-color: #00bcd4;
+  color: #fff;
+  border-color: #00796b;
+}
+
+.asiento.ocupado {
+  background-color: #ccc;
+  border-color: #888;
+  cursor: not-allowed;
+  color: #555;
+}
+
+.pasillo {
+  visibility: hidden;
+}
+
+/* Animación para resaltar asiento seleccionado */
+.asiento-flash {
+  animation: flash 0.3s ease-in-out;
+}
+
+@keyframes flash {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

@@ -1,0 +1,123 @@
+<!-- paginas/destinos.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGENCIA LAS ROSAS - DESTINOS</title>
+
+  <!-- Estilos base modulares -->
+  <link rel="stylesheet" href="/activos/estilosCSS/main.css" />
+  <link rel="stylesheet" href="/activos/estilosCSS/estilosDestinos/collage.css" />
+  <link rel="stylesheet" href="/activos/estilosCSS/estilosDestinos/filtro.css" />
+  <link rel="stylesheet" href="/activos/estilosCSS/estilosDestinos/tarjetas.css" />
+  <link rel="stylesheet" href="/activos/estilosCSS/estilosDestinos/servicios.css" />
+  <link rel="stylesheet" href="/activos/estilosCSS/estilosDestinos/responsive.css" />
+</head>
+<body>
+  <!-- Header dinámico según rol -->
+  <div id="navbar"></div>
+
+  <main>
+    <!-- Collage de ciudades -->
+    <section class="collage-destinos">
+      <div class="collage-wrapper">
+        <div class="collage">
+          <div class="collage-texto-central">DESCUBRE LOS MEJORES SITIOS TURÍSTICOS!</div>
+
+          <!-- IMÁGENES DEL COLLAGE -->
+          <div class="collage-item">
+            <img src="/activos/img/destinos/plazaTrujillo.jpg" alt="Trujillo" />
+          </div>
+          <div class="collage-item">
+            <img src="/activos/img/destinos/temploNazca.jpg" alt="Nazca" />
+          </div>
+          <div class="collage-item">
+            <img src="/activos/img/destinos/plazaAyacucho.jpg" alt="Ayacucho" />
+          </div>
+          <div class="collage-item">
+            <img src="/activos/img/destinos/rioAmazonas.jpg" alt="Amazonas" />
+          </div>
+          <div class="collage-item">
+            <img src="/activos/img/destinos/paracasIca.jpg" alt="Ica" />
+          </div>
+          <div class="collage-item">
+            <img src="/activos/img/destinos/titicacaPuno.jpg" alt="Puno" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de DESTINOS -->
+    <section class="destinos-section">
+      <h2 class="titulo-destinos">DESTINOS</h2>
+
+      <!-- Filtro por zona -->
+      <div class="filtro-region">
+        <label for="filtro-destinos">🌎 Filtrar por zona</label>
+        <div class="select-wrapper">
+          <select id="filtro-destinos">
+            <option value="todos">Todos</option>
+            <option value="costa">Costa</option>
+            <option value="sierra">Sierra</option>
+            <option value="selva">Selva</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- Tarjetas dinámicas -->
+      <div class="destinos-grid" id="contenedor-destinos">
+        <!-- JS insertará aquí las tarjetas -->
+      </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <!-- Sección de Servicios -->
+    <section class="servicios-section">
+      <h2 class="titulo-servicios">SERVICIOS</h2>
+      <div class="servicios-grid">
+
+        <div class="recuadro">
+          <div class="imagen-servicio">
+            <img src="/activos/img/destinos/carretera.png" alt="Viajes por bus" />
+          </div>
+          <div class="contenido-servicio">
+            <h3>Viajes por Bus - Rutas Turísticas</h3>
+            <p>Nuestros buses te llevan cómodo, seguro y con estilo a los destinos más fascinantes del Perú, con puntualidad y confort garantizados.</p>
+          </div>
+        </div>
+
+        <div class="recuadro">
+          <div class="imagen-servicio">
+            <img src="/activos/img/destinos/encomienda.png" alt="Encomiendas" />
+          </div>
+          <div class="contenido-servicio">
+            <h3>Encomiendas – Servicio Rápido y Seguro</h3>
+            <p>Tus paquetes, en buenas mano, nuestra empresa transporta tus encomiendas con velocidad, responsabilidad y rastreo en todo momento.</p>
+          </div>
+        </div>
+
+        <div class="recuadro">
+          <div class="imagen-servicio">
+            <img src="/activos/img/destinos/bus.jpg" alt="Traslados" />
+          </div>
+          <div class="contenido-servicio">
+            <h3>Traslados de Estudiantes – Viajes Académicos</h3>
+            <p>Ofrecemos traslados seguros para estudiantes, ideales para excursiones, salidas culturales y viajes institucionales.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer dinámico -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="../activos/js/global/navbar.js"></script>
+  <script src="../activos/js/destinos/destinosMain.js" type="module"></script>
+
+</body>
+</html>

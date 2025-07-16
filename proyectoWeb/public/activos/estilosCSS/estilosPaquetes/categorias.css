@@ -1,0 +1,206 @@
+/* ============================================================
+   categorias.css
+   ➤ Define estilos específicos por categoría de paquete.
+   ➤ Colores, fondos, tipografía y efectos para: 
+     - económico, vip, ejecutivo y doble.
+   ➤ Facilita personalización visual por tipo de viaje.
+=============================================================== */
+
+.caracteristicas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-align: left;
+  color: #666666;
+}
+
+.caracteristicas li {
+  font-size: 1rem;
+  max-width: 300px;
+}
+/* ===============================
+   🟠 ECONÓMICO
+   Estilo diferenciado del VIP, más fresco y aventurero
+================================= */
+.economico {
+  background: linear-gradient(135deg, #f2f9e1, #d9f1c4); /* Verde limón suave */
+  color: #3b4c1a; /* Verde oliva oscuro */
+}
+
+.economico .titulo-seccion {
+  color: #5d7500;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.economico .descripcion {
+  color: #3f5c00;
+  font-weight: 500;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.economico .paquete-card {
+  background-color: #fcfff7;
+  border: 2px solid #aacd5a;
+  box-shadow: 0 4px 10px rgba(100, 160, 30, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.economico .paquete-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(100, 160, 30, 0.2);
+}
+
+.economico .precio {
+  color: #6c9c00;
+  font-weight: bold;
+}
+/* ===============================
+   🟡 VIP
+=============================== */
+.vip {
+  background: linear-gradient(145deg, #fff8e1, #fceabb); /* Dorado suave */
+  color: #4a3f1d; /* Marrón suave para mantener contraste sin ser negro */
+}
+
+.vip .titulo-seccion {
+  color: #a88700; /* Dorado intenso pero más suave que el anterior */
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.vip .descripcion {
+  color: #665200;
+  font-weight: 500;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.vip .paquete-card {
+  background-color: #fffdf7;
+  border: 2px solid #e1c65e;
+  box-shadow: 0 4px 12px rgba(204, 180, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vip .paquete-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(204, 180, 0, 0.2);
+}
+
+.vip .precio {
+  color: #bfa100;
+  font-weight: bold;
+}
+/* ===============================
+   🔵 EJECUTIVO
+=============================== */
+.ejecutivo {
+  background: linear-gradient(145deg, #e6f2fb, #d7eaf7); /* Azul claro profesional */
+  color: #1a1a1a;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+}
+
+.ejecutivo .titulo-seccion {
+  color: #1f3b5b; /* Azul oscuro sobrio */
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 1px #ffffff;
+}
+
+.ejecutivo .descripcion {
+  color: #2e4c6d;
+  font-weight: 500;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.ejecutivo .paquete-card {
+  background-color: #f7fbff; /* Fondo claro con tinte azul */
+  border: 2px solid #9bb7d4; /* Azul grisáceo */
+  box-shadow: 0 4px 12px rgba(49, 79, 124, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ejecutivo .paquete-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(49, 79, 124, 0.25);
+}
+
+.ejecutivo .precio {
+  color: #2c4a7a; /* Azul marino sobrio */
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+/* ===============================
+   🔴 DOBLE (Promoción Fiestas Patrias)
+=============================== */
+.doble {
+  background-color: #fbeaea;
+  background: linear-gradient(145deg, #ffe5e5, #fff0f0);
+  color: #7d0000;
+}
+
+.doble .paquete-card {
+  border: 2px solid #d00000;
+  background-color: #fffdfd;
+  box-shadow: 0 4px 12px rgba(179, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.doble .paquete-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(179, 0, 0, 0.3);
+}
+
+.seccion-paquete.doble {
+  background: linear-gradient(145deg, #fff, #fbeaea); /* blanco a rosado */
+  padding: 3rem 1rem;
+  border-top: 4px solid #c40000;
+  border-bottom: 4px solid #c40000;
+}
+
+.doble .titulo-seccion {
+  color: #a40000;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 4px rgba(0,0,0,0.1);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.doble .descripcion {
+  color: #700000;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.doble .precio {
+  color: #c40000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}

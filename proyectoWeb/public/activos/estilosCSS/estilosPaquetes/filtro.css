@@ -1,0 +1,53 @@
+/* filtro.css */
+/* Filtro de región para seleccionar zona geográfica */
+.filtro-region {
+  max-width: 1200px;
+  margin: 30px auto 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+.filtro-region select {
+  width: 180px; /* 👈 Aquí ajustas el ancho */
+  appearance: none;
+  background-color: #f9fcff;
+  border: 2px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23666" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+  padding-right: 36px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filtro-region select {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #f9fcff;
+}
+
+.filtro-region select:hover {
+  border-color: #0077B6;
+  cursor: pointer;
+}
+
+.filtro-region select:focus {
+  border-color: #0077B6;
+  box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.2);
+  outline: none;
+}
+
+.filtro-region label {
+  font-size: 1rem;
+  font-weight: bold;
+}

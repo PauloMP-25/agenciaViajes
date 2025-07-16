@@ -1,0 +1,9 @@
+/* portada.css */
+/* Estilos para la imagen de portada principal */
+
+.portada img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}

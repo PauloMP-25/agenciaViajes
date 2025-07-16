@@ -1,0 +1,55 @@
+<!-- paginas/reserva.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGENCIA LAS ROSAS - RESERVAS</title>
+
+    <!-- Estilos base modulares -->
+    <link rel="stylesheet" href="/activos/estilosCSS/main.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/modalAsientos.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/visualizadorAsientos.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/ventanaModal.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/base.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/burbuja.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/formularioNuevo.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/pasajeros.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/promocion.css" />
+    <link rel="stylesheet" href="/activos/estilosCSS/estilosReserva/responsive.css" />
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header dinámico -->
+  <div id="navbar"></div>
+
+  <!-- Formulario dinámico -->
+  <div class="form-container">
+    <h1 class="text-3xl font-bold text-center mb-8 form-title">FORMULARIO DE RESERVAS</h1>
+
+    <!-- Aquí se insertarán los formularios dinámicamente -->
+    <div id="passenger-sections" class="flex flex-wrap justify-center gap-8 px-4"></div>
+
+  </div>
+
+  <!-- Flayer Promocional -->
+  <img src="/activos/img/reserva/portada.png" alt="Flayer promocional" class="flayer-promocional" />
+
+  <!-- Botón WhatsApp escritorio -->
+  <a href="https://wa.me/51999888777" target="_blank" class="boton-principal boton-wsp">Más información</a>
+
+  <!-- Footer dinámico -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="../activos/js/global/navbar.js"></script>
+  <script type="module" src="../activos/js/reserva/paginas/reservasMain.js"></script>
+  
+
+  <!-- Burbuja WhatsApp flotante (móviles)    <script src="../activos/js/reserva/reservasMain.js" type="module"></script>-->
+  <a href="https://wa.me/51999999999" target="_blank" class="whatsapp-burbuja" aria-label="Contáctanos por WhatsApp">
+    <img src="/activos/img/footer/whatsapp.ico" alt="WhatsApp" class="icon">
+  </a>
+
+</body>
+</html>
